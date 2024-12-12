@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .header{
+        @apply fixed z-50 top-0 w-screen md:px-12 min-h-28 flex gap-10 items-center bg-slate-800 justify-between px-6 py-2 border-orange-200 border-b-2;
+    }
+
+    .logoHeader{
+        @apply h-16 w-auto;
+    }
+
+    .menuDrop{
+        @apply  dropdown border-none dropdown-end md:hidden;
+    }
+
+    .menuBtn{
+        @apply btn border-none bg-slate-800 m-1;
+    }
+
+    .ulDesk{
+        @apply flex w-full items-center justify-evenly  bg-slate-800 rounded-box z-[1] min-w-20 py-2 px-6 max-sm:hidden ;
+    }
+
+    .mainContent{
+        @apply mt-28 shadow-md shadow-black bg-center bg-no-repeat bg-cover min-h-screen lg:gap-10 w-screen bg-[url('/src/img/torsoFemininoImg.jpeg')] flex flex-col items-center
+        justify-between py-6 px-1 text-center gap-4;
+    }
+
+    .cardMin{
+        @apply py-3 font-semibold px-4 text-xs bg-slate-800 rounded-full font-inter text-orange-200;
+    }
+
+    .btnSaibaMais{
+        @apply btn bg-slate-800 text-orange-200 rounded-full;
+    }
+
+    .modalSaibaMais{
+        @apply modal-box gap-4 w-11/12 max-w-5xl flex flex-col items-center;
+    }
+
+    .sairSaibaMais{
+        @apply flex w-full justify-end;
+    }
+
+    .cardAviso{
+        @apply card border-l-4 border-cyan-700 bg-base-100 shadow-xl;
+    }
+
+    .procedimento{
+        @apply flex flex-col gap-10 items-center h-screen justify-center p-2;
+    }
+
+    .cardsProcedimento{
+        @apply flex flex-col gap-4 w-full;
+    }
+
+    .cardDiv{
+        @apply flex justify-center shadow-sm shadow-black bg-gray-700 rounded-lg items-center gap-4 w-full;
+    }
+
+    .cardProc{
+        @apply dropdown p-2 gap-4 flex flex-col items-center;
+    }
+
+    .numCardProc{
+        @apply bg-gray-800 px-4 py-2 rounded-full text-sm font-montserrat;
+    }
+
+    .btnCardProc{
+        @apply btn bg-gray-800 m-1 w-full text-sm font-montserrat;
+    }
+
+    .cuidados{
+        @apply min-h-screen flex flex-col gap-6 items-center bg-gray-900 py-20;
+    }
+
+    .cardLg{
+        @apply flex flex-col m-2 rounded p-4 gap-4 bg-gray-800;
+    }
+
+    .ulCardLg{
+        @apply px-10 flex flex-col gap-3 ;
+    }
+
+    .btnCardLg{
+        @apply btn text-orange-200 rounded-full text-lg;
+    }
+
+    .modalLg{
+        @apply modal-box bg-gray-800 flex flex-col items-center gap-2;
+    }
+
+    .ulModalLg{
+        @apply list-disc text-sm font-montserrat text-gray-200 text-left flex flex-col gap-3;
+    }
+
+    .cardAli{
+        @apply bg-slate-900 p-2 flex flex-col gap-2  w-full rounded;
+    }
+
+    .cardResul{
+        @apply bg-base-100 w-full shadow-md shadow-gray-900 rounded-lg;
+    }
+
+    .h1{
+        @apply text-4xl font-roboto text-orange-200 uppercase;
+    }
+    .h2{
+        @apply text-2xl font-inter text-orange-200 uppercase;
+    }
+
+    .h3{
+        @apply text-3xl pb-4 text-orange-200 w-full border-b-2 border-slate-700;
+    }
+
+    .strong{
+        @apply font-bold text-orange-200;
+    }
+
+    .textInfo{
+        @apply text-lg text-left font-inter text-cyan-700;
+    }
+
+    .textInfoLg{
+        @apply text-3xl text-left font-inter text-cyan-700;
+    }
+
+    .pMain{
+        @apply text-xl text-gray-200 font-montserrat border-b-2 pb-2;
+    }
+
+    .p{
+        @apply text-sm font-montserrat;
+    }
+
+    .li{
+        @apply list-disc p text-gray-200;
+    }
+
+    .divCardHeader {
+        @apply flex flex-col items-center gap-2 md:flex-row w-full;
+    }
+
+    .cardHeader{
+        @apply py-8 flex flex-col items-center gap-2 font-semibold px-4 bg-slate-800 rounded-3xl mx-4 w-full font-inter;
+    }
+
+    .h2CardHeader{
+        @apply text-3xl text-orange-200;
+    }
+
+    .pCardHeader{
+        @apply text-sm text-gray-400;
+    }
+  }

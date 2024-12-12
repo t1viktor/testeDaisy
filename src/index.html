@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="/src/input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+</head>
+
+<body class="bg-gray-800 overflow-x-hidden">
+
+  <div id="inicio" class="h-1 w-screen"></div>
+
+  <header class="header">
+
+    <img class="logoHeader" src="/src/img/LOGO_TRANSPARENTE_1.png" alt="">
+
+
+    <div class="menuDrop">
+      <div tabindex="0" role="button" class="menuBtn">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </div>
+
+      <ul tabindex="0"
+        class="dropdown-content menu shadow-sm shadow-slate-900 bg-slate-800 rounded-box z-[1] min-w-20 p-2">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#procedimento">Procedimento</a></li>
+        <li><a href="#cuidados">Cuidados</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+      </ul>
+
+    </div>
+
+    <ul class="ulDesk">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#procedimento">Procedimento</a></li>
+      <li><a href="#cuidados">Cuidados</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+    </ul>
+
+  </header>
+
+
+  <div class="mainContent">
+
+    <button class="cardMin">Procedimento
+      Especializado</button>
+
+    <div class="flex flex-col">
+      <h1 class="h1">Abdominoplastia</h1>
+      <p class="pMain">
+        Procedimento cirúrgico avançado realizado por especialistas, proporcionando resultados seguros e naturais
+      </p>
+    </div>
+
+    <button class="btnSaibaMais" onclick="my_modal_4.showModal()">Saiba mais sobre o
+      procedimento</button>
+
+    <dialog id="my_modal_4" class="modal">
+
+      <div class="modalSaibaMais">
+
+        <form class="sairSaibaMais" method="dialog">
+          <button class="btn text-orange-100">X</button>
+        </form>
+
+        <h3 class="h3">Sobre a Abdominoplastia</h3>
+
+        <span class="textInfo">O que é a Abdominoplastia</span>
+
+        <p class="p">A abdominoplastia é uma cirurgia que visa remodelar o abdômen, removendo o
+          excesso de pele e gordura, além de corrigir a musculatura abdominal quando necessário.</p>
+
+        <div class="cardAviso">
+          <div class="card-body">
+            <h2 class="card-title">Importante:</h2>
+            <p class="text-left">O sucesso da cirurgia depende tanto do procedimento quanto dos cuidados
+              pós-operatórios.</p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </dialog>
+
+    <div class="divCardHeader">
+      <button class="cardHeader">
+        <h2 class="h2CardHeader">15+</h2>
+        <p class="pCardHeader">Anos de Experiência</p>
+      </button>
+
+      <button class="cardHeader">
+        <h2 class="h2CardHeader">2000+</h2>
+        <p class="pCardHeader">Cirurgias Realizadas</p>
+      </button>
+
+      <button class="cardHeader">
+        <h2 class="h2CardHeader">98%</h2>
+        <p class="pCardHeader">Satisfação dos Pacientes</p>
+      </button>
+    </div>
+
+  </div>
+
+  <main class="flex flex-col py-10">
+    <div id="procedimento" class="h-1 w-full"></div>
+
+    <section class="flex flex-col py-60">
+
+      <div class="procedimento">
+        <h2 class="h2">O Procedimento</h2>
+        <p class="p text-center">A abdominoplastia é uma cirurgia que visa remodelar o abdômen,
+          removendo o excesso de pele e gordura, além de corrigir a musculatura abdominal quando necessário.</p>
+
+
+        <div class="cardsProcedimento">
+
+          <div class="cardDiv">
+
+            <div class="cardProc">
+              <div class="numCardProc">1</div>
+              <div tabindex="0" role="button" class="btnCardProc">Avaliação Inicial</div>
+
+              <ul tabindex="0" class="dropdown-content bg-gray-900 mb-14 menu rounded-box z-[1] w-96 px-6 py-10 shadow">
+                <p class="p">Análise detalhada do abdômen e definição do plano cirúrgico personalizado.</p>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cardDiv">
+
+            <div class="cardProc">
+              <div class="numCardProc">2</div>
+              <div tabindex="0" role="button" class="btnCardProc">Avaliação Inicial</div>
+
+              <ul tabindex="0" class="dropdown-content bg-gray-900 mb-14 menu rounded-box z-[1] w-96 px-6 py-10 shadow">
+                <p class="p">Análise detalhada do abdômen e definição do plano cirúrgico personalizado.</p>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cardDiv">
+
+            <div class="cardProc">
+              <div class="numCardProc">3</div>
+              <div tabindex="0" role="button" class="btnCardProc">Avaliação Inicial</div>
+
+              <ul tabindex="0" class="dropdown-content bg-gray-900 mb-14 menu rounded-box z-[1] w-96 px-6 py-10 shadow">
+                <p class="p">Análise detalhada do abdômen e definição do plano cirúrgico personalizado.</p>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cardDiv">
+
+            <div class="cardProc">
+              <div class="numCardProc">4</div>
+              <div tabindex="0" role="button" class="btnCardProc">Avaliação Inicial</div>
+
+              <ul tabindex="0" class="dropdown-content bg-gray-900 mb-14 menu rounded-box z-[1] w-96 px-6 py-10 shadow">
+                <p class="p">Análise detalhada do abdômen e definição do plano cirúrgico personalizado.</p>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+    </section>
+    <div id="cuidados" class="h-16 w-full"></div>
+
+
+    <section class="cuidados">
+
+      <h2 class="h2">Cuidados Essenciais</h2>
+
+      <div class="ordemCardLg grid grid-cols-1 gap-4 md:grid-cols-3">
+
+        <div class="cardLg">
+          <img class="rounded" src="/src/img/pacienteDeitado.jpg" alt="">
+
+          <h2 class="textInfoLg">Cuidados Imediatos</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Repouso adaquado nas primeiras semanas</li>
+            <li class="list-disc text-orange-100">Movimentação suave e progressiva</li>
+            <li class="list-disc text-orange-100">Acompanhamento da cicatrização</li>
+          </ul>
+
+          <button class="btnCardLg" onclick="my_modal_1.showModal()">Ver todos os cuidados</button>
+
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded" src="/src/img/comidaSaudavel.jpg" alt="">
+
+          <h2 class="textInfoLg">Alimentação</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Dieta rica em proteínas</li>
+            <li class="list-disc text-orange-100">Hidratação adequada</li>
+            <li class="list-disc text-orange-100">Suplementação conforme orientação</li>
+          </ul>
+          <button class="btnCardLg" onclick="my_modal_2.showModal()">Ver todos os cuidados</button>
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded" src="/src/img/pessoaLavandoMaos.jpg" alt="">
+
+          <h2 class="textInfoLg">Higiene e Cuidados</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Somente banhos rápidos</li>
+            <li class="list-disc text-orange-100">Siga as orientações médicas</li>
+            <li class="list-disc text-orange-100">limpeza da ferida</li>
+          </ul>
+          <button class="btnCardLg" onclick="my_modal_3.showModal()">Ver todos os cuidados</button>
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded h-60" src="/src/img/CA1A2716.JPEG" alt="">
+
+          <h2 class="textInfoLg">Fisioterapia</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Drenagem linfática especializada</li>
+            <li class="list-disc text-orange-100">Exercícios orientados</li>
+            <li class="list-disc text-orange-100">Tratamentos complementares</li>
+          </ul>
+          
+          <button class="btnCardLg" onclick="my_modal_5.showModal()">Ver todos os cuidados</button>
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded h-60" src="/src/img/cintaPosCirurgica.jpg" alt="">
+
+          <h2 class="textInfoLg">Cinta e Meias</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Uso contínuo por 30 dias</li>
+            <li class="list-disc text-orange-100">Ajuste adequado</li>
+            <li class="list-disc text-orange-100">Troca conforme orientação</li>
+          </ul>
+          
+          <button class="btnCardLg" onclick="my_modal_6.showModal()">Ver todos os cuidados</button>
+          
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded h-60" src="/src/img/pessoaCurvada.jpg" alt="">
+
+          <h2 class="textInfoLg">Posições Corporais</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Deitar-se com tronco elevado</li>
+            <li class="list-disc text-orange-100">Evitar posturas eretas nos primeiros dias</li>
+            <li class="list-disc text-orange-100">Reduzir a tensão</li>
+          </ul>
+        
+          <button class="btnCardLg" onclick="my_modal_7.showModal()">Ver todos os cuidados</button>  
+        </div>
+
+        <div class="cardLg">
+          <img class="rounded" src="/src/img/fotoSorrindoMto.JPEG" alt="">
+
+          <h2 class="textInfoLg">Cinta e Meias</h2>
+
+          <ul class="ulCardLg">
+            <li class="list-disc text-orange-100">Uso contínuo por 30 dias</li>
+            <li class="list-disc text-orange-100">Ajuste adequado</li>
+            <li class="list-disc text-orange-100">Troca conforme orientação</li>
+          </ul>
+        
+          <button class="btnCardLg" onclick="my_modal_8.showModal()">Ver todos os cuidados</button>
+        </div>
+
+
+
+
+
+        
+
+      <div class="modalDiv">
+
+        <dialog id="my_modal_1" class="modal">
+          <div class="modalLg">
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+            <h3 class="h3">Cuidados imediatos gerais</h3>
+            <img class="rounded" src="/src/img/pacienteDeitado.jpg" alt="">
+            <p class="p">Após a abdominoplastia, o corpo precisa de um período de
+              recuperação para se ajustar e cicatrizar. Siga as orientações abaixo para proteger a área operada e
+              reduzir o risco de complicações:</p>
+
+            <ul class="ulModalLg">
+              <li><strong class="strong">Evite esforços físicos:</strong> Nos primeiros 15 dias,
+                evite qualquer tipo de esforço ou movimento brusco. Isso inclui carregar peso, subir escadas em excesso
+                ou fazer exercícios físicos.</li>
+
+              <li><strong class="strong">Repouse adequadamente:</strong> O repouso é essencial nos
+                primeiros dias. Prefira descansar em uma posição levemente inclinada, com o tronco elevado e os joelhos
+                flexionados para aliviar a tensão na área abdominal.</li>
+
+              <li><strong class="strong">Movimente-se com cuidado:</strong> Movimente-se devagar e,
+                sempre que possível, com o auxílio de outra pessoa, principalmente nas primeiras 48 horas. Pequenas
+                caminhadas ajudam a ativar a circulação e prevenir trombose.</li>
+
+              <li><strong class="strong">Atenção aos sinais de alerta:</strong> Caso observe
+                sangramentos, febre, dor intensa e persistente, vermelhidão ou inchaço anormal, entre em contato com sua
+                equipe médica imediatamente.</li>
+            </ul>
+
+          </div>
+        </dialog>
+
+        <!-- Modal 2 -->
+        <dialog id="my_modal_2" class="modal">
+          <div class="modalLg">
+            <form method="dialog">
+              <button class="btn">Fechar</button>
+            </form>
+            <h3 class="h3">2. Cuidados com a Alimentação </h3>
+            <img src="/src/img/comidaSaudavel.jpg" alt="">
+
+            <div class="grid gap-2 grid-cols-1 w-full md:grid-cols-2">
+
+              <div class="cardAli">
+                <p class="textInfo text-center">Proteínas</p>
+                <ul class="ulCardLg">
+
+                  <li class="list-disc text-gray-200">Carnes magras</li>
+                  <li class="list-disc text-gray-200">Peixes</li>
+                  <li class="list-disc text-gray-200">Ovos</li>
+                  <li class="list-disc text-gray-200">Leguminosas</li>
+
+                </ul>
+              </div>
+
+              <div class="cardAli">
+                <p class="textInfo text-center">Vegetais e Frutas</p>
+                <ul class="ulCardLg">
+
+                  <li class="list-disc text-gray-200">Vegetais folhosos</li>
+                  <li class="list-disc text-gray-200">Frutas ricas em vitamina C</li>
+                  <li class="list-disc text-gray-200">Legumes variados</li>
+
+                </ul>
+              </div>
+
+            </div>
+
+            <h2 class="textInfo">Alimentos a Evitar</h2>
+
+            <div class="cardAviso">
+              <ul class="ulCardLg py-4">
+                <li class="list-disc p text-gray-200">Alimentos processados e ricos em sódio</li>
+                <li class="list-disc p text-gray-200">Açúcar</li>
+                <li class="list-disc p text-gray-200">Álcool e cafeína</li>
+              </ul>
+            </div>
+
+            <div class="modal-action">
+            </div>
+          </div>
+        </dialog>
+
+        <!-- Modal 3 -->
+        <dialog id="my_modal_3" class="modal">
+          <div class="modalLg">
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+            <h3 class="h3">3. Higiene e Cuidados com a Ferida Operatória</h3>
+            
+            <div class="cardAli">
+
+              <p class="p">Manter a área operada limpa e protegida é fundamental para evitar infecções e garantir uma cicatrização adequada.</p>
+              <img class="rounded" src="/src/img/pessoaLavandoMaos.jpg" alt="">
+
+              <ul class="ulCardLg">
+
+                <li class="li">Banhos: Somente banhos rápidos, e com autorização médica, geralmente após o segundo dia. Evite molhar a área da incisão nas primeiras semanas.</li>
+                <li class="li">Curativos: Siga as orientações médicas para troca dos curativos, e nunca mexa na área operada sem higienizar bem as mãos antes.</li>
+
+              </ul>
+
+              <img src="/src/img/materiaisHigiene.jpg" alt="" class="rounded">
+
+              <ul class="ulCardLg">
+                <li class="li">Uso de Antissépticos: Em geral, a limpeza da ferida deve ser feita com solução antisséptica recomendada pela equipe médica. Não utilize produtos caseiros, como álcool, sem recomendação.</li>
+                <li class="li">Secagem: Após a higiene, seque cuidadosamente com uma toalha limpa, sem friccionar.</li>
+              </ul>
+            </div>
+          </div>
+        </dialog>
+
+
+        <!-- Modal 5 -->
+        <dialog id="my_modal_5" class="modal">
+          <div class="modalLg">
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+            <h3 class="h3">4. Fisioterapia Pós-operatória</h3>
+
+            <div class="cardAli">
+              <img class="rounded" src="/src/img/CA1A2644.JPEG" alt="">
+
+              <h2 class="textInfo">Drenagem Linfática Manual:</h2>
+              <p class="p">A drenagem linfática é uma técnica suave que ajuda a reduzir o inchaço e eliminar líquidos retidos, o que melhora o conforto e acelera a recuperação. Realizada por fisioterapeutas especializados, a drenagem previne a formação de fibroses e otimiza a circulação linfática.</p>
+
+              <img class="rounded" src="/src/img/fotoClinica.JPEG" alt="">
+
+              <h2 class="textInfo">Carboxiterapia:</h2>
+              <p class="p">Esse tratamento utiliza pequenas injeções de gás carbônico no tecido subcutâneo, o que melhora a oxigenação local e contribui para uma cicatrização mais uniforme e saudável. A carboxiterapia também ajuda a reduzir a formação de fibroses, mantendo a pele mais lisa e flexível.</p>
+
+              <img class="rounded" src="/src/img/fotoExplicando.JPEG" alt="">
+
+              <h2 class="textInfo">Terapias com Laser:</h2>
+              <p class="p">O uso de lasers específicos no pós-operatório ajuda a estimular a regeneração celular, melhorando a qualidade da cicatriz e diminuindo a inflamação. Lasers terapêuticos também auxiliam na prevenção de retrações cutâneas e na formação de cicatrizes hipertróficas.</p>
+
+              
+            </div>
+            <div class="cardAviso p-4">
+              Esses tratamentos devem ser realizados por profissionais especializados, em frequência e duração recomendadas pelo seu cirurgião e fisioterapeuta.
+            </div>
+           
+          </div>
+        </dialog>
+
+        <!-- Modal 6 -->
+        <dialog id="my_modal_6" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Modal 6 - Título</h3>
+            <p class="py-4">Conteúdo do Modal 6. Pressione a tecla ESC ou clique no botão abaixo para fechar.</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+        <!-- Modal 7 -->
+        <dialog id="my_modal_7" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Modal 7 - Título</h3>
+            <p class="py-4">Conteúdo do Modal 7. Pressione a tecla ESC ou clique no botão abaixo para fechar.</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+        <!-- Modal 8 -->
+       
+        <dialog id="my_modal_8" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Modal 8 - Título</h3>
+            <p class="py-4">Conteúdo do Modal 8. Pressione a tecla ESC ou clique no botão abaixo para fechar.</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Fechar</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+    <div id="resultados" class="h-40 w-full"></div>
+
+    <section class="min-h-screen w-full grid grid-cols-1 gap-2 justify-between p-4">
+
+      <h2 class="text-4xl text-center text-orange-200">Resultados</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+
+      <div class="grid grid-cols-1 h-full gap-4 items-center justify-between">
+      <h3 class="textInfoLg">Transformação Completa</h3>
+
+      <p class="text-gray-200">Os resultados da abdominoplastia são notados gradualmente, com a evolução completa em até
+        6 meses após o procedimento.</p>
+
+      <ul class="ulCardLg">
+        <li class="li">Abdômen mais firme e definido</li>
+        <li class="li">Remoção do excesso de pele</li>
+        <li class="li">Correção da diástase abdominal</li>
+        <li class="li">Melhora da autoestima</li>
+      </ul>
+
+      <!-- Modal 9 -->
+      <button class="btn p rounded-full" onclick="my_modal_9.showModal()">Ver processo completo de recuperação</button>
+      <dialog id="my_modal_9" class="modal">
+        <div class="modal-box bg-gray-800 flex flex-col items-left gap-2">
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Fechar</button>
+            </form>
+          </div>
+          <h3 class="h3">Resultados e Recuperação</h3>
+
+          <div class="bg-gray-800 p-6 rounded-lg w-full mx-auto">
+            <h2 class="textInfo">Evolução dos Resultados</h2>
+            <table class="w-full text-white">
+                <thead>
+                    <tr>
+                        <th class="border-b-2 border-gray-600 px-4 py-2 text-left">Período</th>
+                        <th class="border-b-2 border-gray-600 px-4 py-2 text-left">Evolução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-b border-gray-600 px-4 py-2">1-2 semanas</td>
+                        <td class="border-b border-gray-600 px-4 py-2">Redução inicial do inchaço</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-600 px-4 py-2">1-2 meses</td>
+                        <td class="border-b border-gray-600 px-4 py-2">Retorno gradual às atividades</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b border-gray-600 px-4 py-2">3-6 meses</td>
+                        <td class="border-b border-gray-600 px-4 py-2">Resultados finais visíveis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        </div>
+      </dialog>
+        
+      </div>
+
+    <div class="flex flex-col w-full p-4 items-center justify-between gap-4">
+
+        <div class="cardResul ">
+
+          <div class="card-body items-center">
+            <h2 class="textInfoLg font-semibold ">97%</h2>
+            <p class="p">Índice de Satisfação</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cardResul">
+          <div class="card-body items-center">
+            <h2 class="textInfoLg font-semibold">30</h2>
+            <p class="p">Dias de Recuperação</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cardResul">
+          <div class="card-body items-center">
+            <h2 class="textInfoLg font-semibold">6</h2>
+            <p class="p">Meses para Resultado Final</p>
+            <div class="card-actions justify-end">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-200 py-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 items-center">
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start">
+        <img src="img/LOGO_TRANSPARENTE_1.png" alt="Logo" class="w-60 h-auto object-contain" />
+      </div>
+
+      <!-- Informações do Médico -->
+      <div class="text-center md:text-left">
+        <h3 class="text-lg font-semibold text-orange-400 mb-2">Dr. Douglas Macêdo</h3>
+        <ul class="space-y-2 text-sm">
+          <li><strong>CRM:</strong> 14722</li>
+          <li><strong>RQE:</strong> 14365</li>
+          <li><strong>Email:</strong> <a href="mailto:douglasmacedo.plastica@gmail.com"
+              class="hover:text-orange-300">douglasmacedo.plastica@gmail.com</a></li>
+          <li><strong>Contato:</strong> <a href="tel:+5585997100666" class="hover:text-orange-300">(85) 99710-0666</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- QR Code -->
+      <div class="flex justify-center md:justify-end">
+        <div class="bg-white p-4 items-center flex flex-col rounded-lg shadow-lg">
+          <img src="img/qrCode.jpeg" alt="QR Code" class="w-40 object-contain" />
+
+          <p class="text-sm text-gray-700 mt-2 text-center">Aponte a câmera para acessar as informações</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+      &copy; 2024 Dr. Douglas Macêdo. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+
+</html>
