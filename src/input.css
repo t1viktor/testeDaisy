@@ -25,7 +25,7 @@
     }
 
     .mainContent{
-        @apply mt-28 shadow-md shadow-black bg-center bg-no-repeat bg-cover min-h-screen lg:gap-10 w-screen bg-[url(bg-[url('./img/torsoFemininoImg.jpeg')]
+        @apply mt-28 shadow-md shadow-black bg-center bg-no-repeat bg-cover min-h-screen lg:gap-10 w-screen bg-[url(bg-[url('/public/torsoFemininoImg.jpeg')]
 ')]
 ')]
 )] flex flex-col items-center
